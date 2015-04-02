@@ -1,0 +1,248 @@
+<html>
+<head>
+	<meta charset = "utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type= "text/css" href= "./css/bootstrap.min.css">
+	<link rel="stylesheet" type= "text/css" href= "./css/bootstrap.css">
+	<script type="text/javascript" src="./js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./js/navbar.js"></script>
+</head>
+<body>
+
+	<div id="includedContent"></div>
+
+    <div class="row-fluid">
+        <div class="col-md-12-fluid">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                    	<img class="img-responsive" src="./img/hightlight/3.jpg">
+                        <!-- <img src="./img/HOP-1.jpg" alt=""> -->
+                    </div>
+                    <div class="item">
+                    	<img class="img-responsive" src="./img/hightlight/2.jpg">
+                        <!-- <img src="./img/HOP-2.jpg" alt=""> -->
+                    </div>
+                    <div class="item">
+                    	<img class="img-responsive" src="./img/hightlight/1.jpg">
+                        <!-- <img src="./img/HOP-3.jpg" alt=""> -->
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+		</div>
+	</div>
+	<br />
+	<div class="container">
+		<div class="row">
+			<p><h3> Featured Project </h3></p>
+		</div>
+	</div>
+	<br />
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class ="panel panel-default">
+					<div class ="panel-heading">
+						<div class ="panel-body">
+							<div class="row">
+								<div class="col-md-5">
+ 									<img src="./img/Project1/3.jpg" class="img-thumbnail">
+								</div>
+								<div class="col-md-7">
+									<p><a href="#"><h3> โครงการปันโอกาสวาดอนาคต </h3></a></p>
+									<p>สมุนไพรในป่าเล็ก กับการเรียนรู้ของเด็กและเยาวชน เป็นโครงการ ที่ทางมูลนิธิการศึกษาเพื่อโลกสีเขียว มุ่งหวังให้เด็ก ๆ  มีเวทีแห่งการเรียนรู้ร่วมกันอย่างสร้างสรรค์ เกิดความเข้าใจในทิศทางการทำงานร่วมกัน มีเวทีแห่งการพูดคุย  ปรึกษาหารือ แลกเปลี่ยนประสบการณ์ หรือความคิดเห็นกันอย่างต่อเนื่อง  กลุ่มโรงเรียนเป้าหมาย 2 โรงเรียน 1.โรงเรียนบ้านหนองเหล็กประชาพัฒน์ 2.โรงเรียนเมืองลีงวิทยา   ตำบลเมืองลีง   อำเภอจอมพระ   จังหวัดสุรินทร์ การส่งเสริมให้เด็กเกิดการเรียนรู้ที่จะเข้าใจตนเอง เข้าใจครอบครัว เข้าใจชุมชน และเข้าใจสถาบันที่ตนเองเรียนอยู่อย่างละเอียดและลึกซึ้ง  ส่งผลให้เด็ก ๆ เกิดการพัฒนาบุคลิกภาพในหลาย ๆ ด้าน เช่น ทักษะชีวิต ทักษะการปรับตัวอยู่ในสังคม ทักษะด้านอาชีพที่ตนเองถนัด จนเกิดการใส่ใจใฝ่รู้ มุ่งสู่ความมานะอดทน ส่งผลให้มีผลสัมฤทธิ์ทางด้านการเรียนดีขึ้นอย่างต่อเนื่อง นำไปสู่การวางแผนชีวิตของตนเองด้านการประกอบอาชีพที่เหมาะสมได้ในที่สุด</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	 <script type="text/javascript">
+		$(document).read(function() {
+			var stickNavTop = $('#scrollingNav').offset().top;
+			var stickyNav = function(){
+				var scrollTop = $(window).scrollTop();
+				if (scrollTop > stickNavTop) {
+					$('#scrollingNav').removeClass('navbar navbar-default navbar-fixed-top');
+					$('#scrollingNav').addClass('stricky');
+					$('#scrollingNav').addClass('navbar navbar-inverse navbar-fixed-top');
+				} else{
+					scrollTop > stickNavTop) {
+					$('#scrollingNav').removeClass('stricky');
+					$('#scrollingNav').removeClass('navbar navbar-inverse navbar-fixed-top');
+					$('#scrollingNav').addClass('navbar navbar-default navbar-fixed-top');
+				}
+			}
+			stickyNav();
+			$(window).scroll(function(){
+				strickyNav();
+			});
+		});
+	 </script>
+
+	<div class="container">
+		<div class="row">
+			<p><h3> Popular Project </h3></p>
+		</div>
+	</div>
+	<br />
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="well">
+						<img src="./img/Project1/2.jpg" class="img-thumbnail">
+						<p><a href="#"><b> ค่ายภาษาอังกฤษแบบบูรณาการ </b></a></p>
+						<!-- <p> Coming Soon </p> -->
+					<div class="progress">
+		  					<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+						    60%
+							</div>
+					</div>
+				</div>	
+			</div>
+			<div class="col-md-4">
+				<div class="well">
+						<img src="./img/Project2/4.jpg" class="img-thumbnail">
+						<p><a href="#"><b> โครงการสร้างโดมสนามบาสเก็ตบอลสัมพันธ์ระหว่างวัยเพื่อการศึกษา </b></a></p>
+						<!-- <p> Coming Soon </p> -->
+					<div class="progress">
+		  					<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+						    60%
+							</div>
+					</div>
+				</div>	
+			</div>
+			<div class="col-md-4">
+				<div class="well">
+						<img src="./img/Project3/3.jpg" class="img-thumbnail">
+						<p><a href="#"><b> โครงการปันโอกาสวาดอนาคต </b></a></p>
+						<!-- <p> Coming Soon </p> -->
+					<div class="progress">
+		  					<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+						    60%
+							</div>
+					</div>
+				</div>	
+			</div>
+		</div>	
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<p><h3> Sponsor </h3></p>
+		</div>
+	</div>
+
+	<br />
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<img src="./img/HOP-1-1.jpg" class="img-thumbnail">
+			</div>
+			<div class="col-md-3">
+				<img src="./img/HOP-1-3.jpg" class="img-thumbnail">
+			</div>
+			<div class="col-md-3">
+				<img src="./img/HOP-1-1.jpg" class="img-thumbnail">
+			</div>
+			<div class="col-md-3">
+				<img src="./img/HOP-1-2.jpg" class="img-thumbnail">
+			</div>
+		</div>
+	</div>
+
+	<br /><br /><br />
+
+	<div class="container-fluid">
+		<img src="./img/hightlight/4.jpg" class="img-thumbnail-silde img-thumbnail">
+	</div>
+
+	<div class="page-header"></div>
+
+	<!-- Footer -->
+	<div class="panel-footer">
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="col-md-3">
+					
+						<div align="right"><b>About us</b></div><br>
+						<p align="right">What is Kickstarter?</p>
+						<p align="right">Year in Kickstarter 2014</p>
+						<p align="right">Who we are</p>
+						<p align="right">Jobs</p>
+						<p align="right">Press</p>
+						<p align="right">Stats</p>
+						<p align="right">Projects we love</p>
+					
+				</div>
+				<div class="col-md-2">
+					
+						<div align="right"><b>Help</b></div><br>
+						<p align="right">FAQ</p>
+						<p align="right">Our Rules</p>
+						<p align="right">Creator Handbook</p>
+						<p align="right">Trust & Safety</p>
+						<p align="right">Support</p>
+						<p align="right">Terms of Use</p>
+						<p align="right">Privacy Policy</p>
+					
+				</div>
+				<div class="col-md-2">
+					
+						<div align="right"><b>Discover</b></div><br>
+						<p align="right">Art</p>
+						<p align="right">Comics</p>
+						<p align="right">Crafts</p>
+						<p align="right">Dance</p>
+						<p align="right">Design</p>
+						<p align="right">Fashion</p>
+						<p align="right">Film & Video</p>
+						<p align="right">Food</p>
+					
+				</div>
+				<div class="col-md-2">
+					
+						<div align="right"><br></div><br>
+						<p align="right">Games</p>
+						<p align="right">Journalism</p>
+						<p align="right">Music</p>
+						<p align="right">Photography</p>
+						<p align="right">Publishing</p>
+						<p align="right">Technology</p>
+						<p align="right">Theater</p>
+					
+				</div>
+				<div class="col-md-2">
+					
+						<div align="right"><b>Hello</b></div><br>
+						<p align="right">Happening New!</p>
+						<p align="right">Company Blog</p>
+						<p align="right">Twitter</p>
+						<p align="right">Facebook</p>
+						<p align="right">Tumblr</p>
+						<p align="right">Instagram</p>
+						<p align="right">Vine</p>
+					
+				</div>
+			</div>	
+		</div>
+	</div>		
+</body>
+</html>
